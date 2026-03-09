@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+nav {
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#menu-toggle { display: none; }
+
+.hamburger {
+    display: block;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+}
+
+#menu-toggle:checked ~ ul {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #2e7d32;
+}
+
+
+main {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #2e7d32;
+    border-bottom: 2px solid #2e7d32;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
+.intro-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.intro-text {
+    flex: 2;
+}
+
+.intro-text ul {
+    margin: 15px 0 0 20px;
+}
+
+.burger-img-small {
+    width: 220px; 
+    height: auto;
+    border-radius: 12px;
+    order: 2;
+}
+
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#menu article {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #2e7d32;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .hamburger { display: none; }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menu {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+   
+    @media (max-width: 600px) {
+        .intro-container {
+            flex-direction: column;
+        }
+        .burger-img-small {
+            width: 100%;
+            order: -1;
+        }
+    }
+}
