@@ -68,6 +68,7 @@ nav a {
 
 nav a:hover {
     background-color: #2e7d32;
+    border-radius: 8px;
 }
 
 
@@ -136,6 +137,59 @@ footer {
     padding: 20px;
 }
 
+#nav-button {
+ background-color: #256628;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.reservation {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.reservation-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: solid 3px black;
+  padding: 10px;
+  background-color: rgba(2, 66, 27, 0.548);
+  border-radius: 5px;
+}
+
+.reservation-form input,
+.reservation-form select {
+  padding: 12px;
+  font-size: 16px;
+}
+
+.reservation-form button {
+  padding: 14px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.reservation-form button:hover {
+  background: #333;
+}
+
+@media (max-width: 767.9px) {
+    .intro-container {
+        flex-direction: column;
+    }
+    .burger-img-small {
+        width: 100%;
+        order: -1;
+    }
+}
 
 @media (min-width: 768px) {
     .hamburger { display: none; }
@@ -147,16 +201,5 @@ footer {
 
     #menu {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-   
-    @media (max-width: 600px) {
-        .intro-container {
-            flex-direction: column;
-        }
-        .burger-img-small {
-            width: 100%;
-            order: -1;
-        }
     }
 }
