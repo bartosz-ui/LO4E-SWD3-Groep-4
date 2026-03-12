@@ -31,15 +31,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </header>
 
 <nav>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger">☰ Menu</label>
-    <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="lunch and dinner.php">Menu</a></li>
-        <li><a href="#over">openingstijden</a></li>
-        <li><a href="vacaturen.php">vacatures</a></li>
-        <button id="nav-button"><a href="reserveren.php">Reserveren</a></button>
-    </ul>
+<input type="checkbox" id="menu-toggle">
+<label for="menu-toggle" class="hamburger">☰ Menu</label>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="openingstijden.html">Openingstijden</a></li>
+<li><a href="vacatures.php">Vacatures</a></li>
+<li><a href="reserveren.php" id="nav-button">Reserveren</a></li>
+</ul>
 </nav>
 
 <main>
