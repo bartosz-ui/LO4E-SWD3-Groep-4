@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegan Food Amsterdam</title>
     <link rel="stylesheet" href="stylesheet/index.css">
+    <link rel="script" href="script.js" >
 </head>
 <body>
     <header>
-    <img src="images/logo_vegan_food_amsterdam.png" alt="Logo" class="logo">
-    <aside>
-        <h1>Vegan Food Amsterdam</h1>
-        <p>100% plantaardig genieten in Amsterdam</p>
-    </aside>
+<?php
+echo '
+<img src="images/logo_vegan_food_amsterdam.png" alt="Logo" class="logo">
+
+<aside>
+    <h1>Vegan Food Amsterdam</h1>
+    <p>100% plantaardig genieten in Amsterdam</p>
+</aside>
+';
+?>
 </header>
 
 <nav>
@@ -26,6 +32,32 @@
         <button id="nav-button"><a href="reserveren.php">Reserveren</a></button>
     </ul>
 </nav>
+<?php
+$menu = [
+    ["name" => "Vegan Burger", "price" => "€12", "category" => "main"],
+    ["name" => "Vegan Pizza", "price" => "€14", "category" => "main"],
+    ["name" => "Sweet Potato Fries", "price" => "€5", "category" => "sides"],
+    ["name" => "Vegan Nuggets", "price" => "€6", "category" => "sides"],
+    ["name" => "Fresh Orange Juice", "price" => "€4", "category" => "drinks"],
+    ["name" => "Iced Matcha Latte", "price" => "€5", "category" => "drinks"]
+];
+?>
+<div class="menu-buttons">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('main')">Main</button>
+    <button onclick="filterMenu('sides')">Sides</button>
+    <button onclick="filterMenu('drinks')">Drinks</button>
+</div>
+<div class="menu">
+
+<?php foreach ($menu as $item): ?>
+    <div class="menu-item" data-category="<?php echo $item['category']; ?>">
+        <h3><?php echo $item['name']; ?></h3>
+        <p><?php echo $item['price']; ?></p>
+    </div>
+<?php endforeach; ?>
+
+</div>
 <footer>
 <?php
 echo "© " . date("Y") . " Vegan Food Amsterdam. Alle rechten voorbe houden.";

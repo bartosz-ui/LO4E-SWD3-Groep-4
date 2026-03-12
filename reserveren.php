@@ -8,11 +8,16 @@
 </head>
 <body>
     <header>
-    <img src="images/logo_vegan_food_amsterdam.png" alt="Logo" class="logo">
-    <aside>
-        <h1>Vegan Food Amsterdam</h1>
-        <p>100% plantaardig genieten in Amsterdam</p>
-    </aside>
+<?php
+echo '
+<img src="images/logo_vegan_food_amsterdam.png" alt="Logo" class="logo">
+
+<aside>
+    <h1>Vegan Food Amsterdam</h1>
+    <p>100% plantaardig genieten in Amsterdam</p>
+</aside>
+';
+?>
 </header>
 
 <nav>
