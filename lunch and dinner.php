@@ -19,12 +19,17 @@
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="hamburger">☰ Menu</label>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="lunch and dinner.html">Menu</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="lunch and dinner.php">Menu</a></li>
         <li><a href="#over">openingstijden</a></li>
-        <li><a href="vacaturen.html">vacatures</a></li>
+        <li><a href="#contact">vacatures</a></li>
         <button id="nav-button"><a href="reserveren.html">Reserveren</a></button>
     </ul>
 </nav>
+<footer>
+<?php
+echo "© " . date("Y") . " Vegan Food Amsterdam. Alle rechten voorbe houden.";
+?> 
+</footer>
 </body>
 </html>
