@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegan Food Amsterdam</title>
     <link rel="stylesheet" href="stylesheet/index.css">
+    <link rel="script" href="script.js" >
 </head>
 <body>
 
