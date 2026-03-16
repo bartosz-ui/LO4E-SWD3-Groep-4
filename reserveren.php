@@ -29,7 +29,7 @@ echo '
         <li><a href="lunch and dinner.php">Menu</a></li>
         <li><a href="#over">openingstijden</a></li>
         <li><a href="vacaturen.php">vacatures</a></li>
-        <button id="nav-button"><a href="reserveren.html">Reserveren</a></button>
+        <button id="nav-button"><a href="reserveren.php">Reserveren</a></button>
     </ul>
 </nav>
 <section class="reservation">
