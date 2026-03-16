@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
 <header>
-<img src="images/logo.png" alt="Vegan Food Amsterdam logo" class="logo">
+<img src="images/logo_vegan_food_amsterdam.png" alt="Vegan Food Amsterdam logo" class="logo">
 <div>
 <h1>Vegan Food Amsterdam</h1>
 <p>100% plantaardig genieten in Amsterdam</p>
