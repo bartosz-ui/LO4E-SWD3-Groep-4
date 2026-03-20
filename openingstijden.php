@@ -38,7 +38,7 @@
                 <li>Donderdag: 12:00 - 22:00</li>
                 <li>Vrijdag: 12:00 - 23:00</li>
                 <li>Zaterdag: 12:00 - 23:00</li>
-                <li>dicht</li>
+                <li>zondag: 14:00 - 21:00</li>
             </ul>
         </section>
     </main> 
