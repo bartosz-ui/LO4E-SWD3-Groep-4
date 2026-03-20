@@ -23,11 +23,25 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="lunch and dinner.php">Menu</a></li>
             <li><a href="openingstijden.php">Openingstijden</a></li>
-            <li><a href="vacatures.php">Vacatures</a></li>
+            <li><a href="vacaturen.php">Vacatures</a></li>
             <li><a href="reserveren.php" id="nav-button">Reserveren</a></li>
         </ul>
     </nav>
-    <h1></h1>
+    <main>
+        <section id="openingstijden">
+            <h2>Openingstijden</h2>
+            <p>Wij zijn geopend van maandag tot en met zondag:</p>
+            <ul>
+                <li>Maandag: 12:00 - 22:00</li>
+                <li>Dinsdag: 12:00 - 22:00</li>
+                <li>Woensdag: 12:00 - 22:00</li>
+                <li>Donderdag: 12:00 - 22:00</li>
+                <li>Vrijdag: 12:00 - 23:00</li>
+                <li>Zaterdag: 12:00 - 23:00</li>
+                <li>dicht</li>
+            </ul>
+        </section>
+    </main> 
 </header>
 <footer>
 <?php
