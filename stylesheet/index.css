@@ -10,6 +10,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+    height: auto;
 }
 
 
@@ -166,6 +167,11 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+  /* als je er absolute van maakt staat hij altijd onderaan
+    let wel op dat dit voor elke pagina geldt
+    dus maak er een apparte van */
+    position : relative;
+    bottom: 0;
 }
 
 #nav-button {
