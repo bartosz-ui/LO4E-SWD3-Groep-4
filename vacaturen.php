@@ -1,29 +1,22 @@
-<?php
-$bericht = "";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $naam = htmlspecialchars($_POST["naam"]);
-    $email = htmlspecialchars($_POST["email"]);
-    $functie = htmlspecialchars($_POST["functie"]);
-
-    $bericht = "Bedankt $naam! Je sollicitatie voor '$functie' is ontvangen.";
-}
-?>
 
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vacatures | Vegan Food Amsterdam</title>
-<link rel="stylesheet" href="stylesheet/index.css">
-    <link rel="script" href="script.js" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Vegan Food Amsterdam</title>
+    <link rel="stylesheet" href="stylesheet/index.css">
+<script src="script.js" defer></script>
 </head>
 
 <body>
 
 <header>
-<img src="images/logo.png" alt="Vegan Food Amsterdam logo" class="logo">
+<img src="images/logo_vegan_food_amsterdam.png" alt="Logo" class="logo">
 <div>
 <h1>Vegan Food Amsterdam</h1>
 <p>100% plantaardig genieten in Amsterdam</p>
@@ -42,7 +35,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <li><a href="reserveren.php" id="nav-button">Reserveren</a></li>
 </ul>
 </nav>
+<?php
+$bericht = "";
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $naam = htmlspecialchars($_POST["naam"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $functie = htmlspecialchars($_POST["functie"]);
+
+    $bericht = "Bedankt $naam! Je sollicitatie voor '$functie' is ontvangen.";
+}
+?>
 <main>
 
 <section id="vacatures">

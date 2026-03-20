@@ -56,7 +56,20 @@ nav ul {
 #menu-toggle:checked ~ ul {
     display: block;
 }
-
+#menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+.menu-items {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #256628;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    gap: 20px;
+}
 nav a {
     display: block;
     padding: 15px;
@@ -115,21 +128,39 @@ h2 {
 }
 
 
-#menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+.menu-container{
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
 }
 
-#menu article {
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+.menu-item{
     background: white;
     padding: 20px;
     border-radius: 8px;
-    border-left: 6px solid #2e7d32;
+    border-left: 6px solid #256628;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-
+.menu-buttons button{
+    padding: 12px 25px;
+    font-size: 18px;
+    border: solid 2px #256628;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #2e7d32;
+}
+.menu-buttons button:hover {
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
+}
 footer {
     background: #1a1a1a;
     color: white;
@@ -180,7 +211,27 @@ footer {
 .reservation-form button:hover {
   background: #333;
 }
+body {
+    background: white;
+    color: black;
+}
 
+.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .menu-item {
+    background: #1e1e1e;
+}
+.high-contrast {
+    background: black;
+    color: yellow;
+}
+
+.high-contrast a {
+    color: cyan;
+}
 @media (max-width: 767.9px) {
     .intro-container {
         flex-direction: column;

@@ -9,3 +9,19 @@ function filterMenu(category) {
         }
     });
 }
+
+const toggleBtn = document.getElementById("toggle-darkmode");
+
+toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
+
+let currentSize = 100;
+
+function changeFontSize(change) {
+    currentSize += change * 10;
+    document.body.style.fontSize = currentSize + "%";
+}
+document.getElementById("contrast-toggle").addEventListener("click", () => {
+    document.body.classList.toggle("high-contrast");
+});

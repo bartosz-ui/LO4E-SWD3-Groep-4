@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegan Food Amsterdam</title>
     <link rel="stylesheet" href="stylesheet/index.css">
-    <link rel="script" href="script.js" >
+<script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,6 +32,10 @@ echo '
         <button id="nav-button"><a href="reserveren.php">Reserveren</a></button>
     </ul>
 </nav>
+<button id="toggle-darkmode">🌙 Dark mode</button>
+<button onclick="changeFontSize(1)">A+</button>
+<button onclick="changeFontSize(-1)">A-</button>
+<button id="contrast-toggle">Hoog contrast</button>
 <?php
 $menu = [
     ["name" => "Vegan Burger", "price" => "€12", "category" => "main"],
@@ -42,12 +46,15 @@ $menu = [
     ["name" => "Iced Matcha Latte", "price" => "€5", "category" => "drinks"]
 ];
 ?>
+<article class="menu-container">
+
 <div class="menu-buttons">
     <button onclick="filterMenu('all')">All</button>
     <button onclick="filterMenu('main')">Main</button>
     <button onclick="filterMenu('sides')">Sides</button>
     <button onclick="filterMenu('drinks')">Drinks</button>
 </div>
+</article>
 <div class="menu">
 
 <?php foreach ($menu as $item): ?>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegan Food Amsterdam</title>
     <link rel="stylesheet" href="stylesheet/index.css">
-    <link rel="script" href="script.js" >
+<script src="script.js" defer></script>
 </head>
 <body>
 
@@ -55,17 +55,17 @@ echo '
 
     <section id="menu">
         <h2>Populaire gerechten</h2>
-        <article>
+        <article class ="menu-items">
             <h3><a href="vegan-burger">De Vegan Burger</a></h3>
             <p>Huisgemaakte burger met verse groenten en saus.</p>
         </article>
 
-        <article>
+        <article class="menu-items">
             <h3><a href="buddha-bowl">Buddha Bowl</a></h3>
             <p>Gezonde bowl met quinoa, avocado en seizoensgroenten.</p>
         </article>
 
-        <article>
+        <article class="menu-items">
             <h3><a href="vegan-pasta">Vegan Pasta</a></h3>
             <p>Pasta met romige plantaardige saus en groenten.</p>
         </article>
