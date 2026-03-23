@@ -1,41 +1,15 @@
-<!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vegan Food Amsterdam</title>
-    <link rel="stylesheet" href="stylesheet/index.css">
-<script src="script.js" defer></script>
-</head>
-<body>
- 
-<header>
-    <img src="images/logo_vegan_food_amsterdam.png" alt="Logo" class="logo">
-    <div>
-        <h1>Vegan Food Amsterdam</h1>
-        <p>100% plantaardig genieten in Amsterdam</p>
-    </div>
-</header>
- 
-<nav>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger">☰ Menu</label>
-    <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="lunch and dinner.php">Menu</a></li>
-        <li><a href="openingstijden.php">Openingstijden</a></li>
-        <li><a href="vacaturen.php">Vacatures</a></li>
-        <li><a href="reserveren.php" id="nav-button">Reserveren</a></li>
-    </ul>
-</nav>
- 
+<?php
+$pageTitle = "Home - Vegan Food Amsterdam";
+include 'header.php';
+?>
+
 <main>
     <section id="home">
         <h2>Welkom</h2>
         <article class="intro-container">
-            <aside class="intro-text">
+            <section class="intro-text">
                 <p>Welkom bij Vegan Food Amsterdam. Wij serveren heerlijke, verse en volledig plantaardige gerechten.</p>
-                <h3><a href="#">De Vegan Burger</a></h3>
+                <h3><a href="lunch and dinner.php">De Vegan Burger</a></h3>
                 <p>Onze specialiteit! Deze burger is niet alleen lekker, maar ook gezond. Wat zit erin?</p>
                 <ul>
                     <li>Patty van zwarte bonen en quinoa</li>
@@ -43,36 +17,36 @@
                     <li>Huisgemaakte vegan saus</li>
                     <li>Lokaal gebakken broodje</li>
                 </ul>
-            </aside>
-            <img src="stylesheet/images/vega burger.png" alt="Vegan burger" class="burger-img-small">
+            </section>
+            <img src="stylesheet/images/vega burger.png" alt="Een heerlijke vegan burger met sla, komkommer en saus" class="burger-img-small">
         </article>
     </section>
- 
+
     <section id="menu">
         <h2>Populaire gerechten</h2>
-        <div class="menu-grid">
+        <section class="menu-grid">
             <article class ="menu-items">
-                <h3><a href="vegan-burger">De Vegan Burger</a></h3>
+                <h3><a href="lunch and dinner.php">De Vegan Burger</a></h3>
                 <p>Huisgemaakte burger met verse groenten en saus.</p>
             </article>
- 
+
             <article class="menu-items">
-                <h3><a href="buddha-bowl">Buddha Bowl</a></h3>
+                <h3><a href="lunch and dinner.php">Buddha Bowl</a></h3>
                 <p>Gezonde bowl met quinoa, avocado en seizoensgroenten.</p>
             </article>
- 
+
             <article class="menu-items">
-                <h3><a href="vegan-pasta">Vegan Pasta</a></h3>
+                <h3><a href="lunch and dinner.php">Vegan Pasta</a></h3>
                 <p>Pasta met romige plantaardige saus en groenten.</p>
             </article>
-        </div>
+        </section>
     </section>
- 
+
     <section id="over">
         <h2>Over ons</h2>
-        <p>Ons restaurant richt zich op duurzaam en lekker eten. Alles is 100% vegan en vers bereid.</p>
+        <p>Ons restaurant richt zich op puur en lekker eten. Alles is 100% vegan en vers bereid.</p>
     </section>
- 
+
     <section id="contact">
         <h2>Contact</h2>
         <p><strong>Email:</strong> info@veganfoodamsterdam.nl</p>
@@ -80,13 +54,5 @@
         <p>📍 Amsterdam</p>
     </section>
 </main>
- 
-<footer>
-<?php
-echo "© " . date("Y") . " Vegan Food Amsterdam. Alle rechten voorbe houden.";
-?>
-</footer>
- 
-</body>
-</html>
- 
+
+<?php include 'footer.php'; ?>
