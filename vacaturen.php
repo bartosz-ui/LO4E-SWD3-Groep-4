@@ -1,4 +1,18 @@
+<?php
+$bericht = "";
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $functie = filter_input(INPUT_POST, 'functie', FILTER_SANITIZE_STRING);
+    $naam = filter_input(INPUT_POST, 'naam', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 
+    if (!$naam || !$email || !$functie) {
+        $bericht = "Vul alle velden correct in.";
+    } else {
+        // TODO: in echte app: sla op in database of verstuur e-mail.
+        $bericht = "Bedankt $naam! Je sollicitatie voor '$functie' is ontvangen.";
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html lang="nl">

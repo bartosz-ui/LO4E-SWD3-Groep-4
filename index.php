@@ -10,16 +10,11 @@
 <body>
 
 <header>
-<?php
-echo '
-<img src="images/logo_vegan_food_amsterdam.png" alt="Logo" class="logo">
-
-<aside>
-    <h1>Vegan Food Amsterdam</h1>
-    <p>100% plantaardig genieten in Amsterdam</p>
-</aside>
-';
-?>
+    <img src="images/logo_vegan_food_amsterdam.png" alt="Logo" class="logo">
+    <div>
+        <h1>Vegan Food Amsterdam</h1>
+        <p>100% plantaardig genieten in Amsterdam</p>
+    </div>
 </header>
 
 <nav>
@@ -28,9 +23,9 @@ echo '
     <ul>
         <li><a href="index.php">Home</a></li>
         <li><a href="lunch and dinner.php">Menu</a></li>
-        <li><a href="openingstijden.php">openingstijden</a></li>
-        <li><a href="vacaturen.php">vacatures</a></li>
-        <button id="nav-button"><a href="reserveren.php">Reserveren</a></button>
+        <li><a href="openingstijden.php">Openingstijden</a></li>
+        <li><a href="vacaturen.php">Vacatures</a></li>
+        <li><a href="reserveren.php" id="nav-button">Reserveren</a></li>
     </ul>
 </nav>
 
@@ -40,7 +35,7 @@ echo '
         <article class="intro-container">
             <aside class="intro-text">
                 <p>Welkom bij Vegan Food Amsterdam. Wij serveren heerlijke, verse en volledig plantaardige gerechten.</p>
-                <h3><a>De Vegan Burger</h3>
+                <h3><a href="#">De Vegan Burger</a></h3>
                 <p>Onze specialiteit! Deze burger is niet alleen lekker, maar ook gezond. Wat zit erin?</p>
                 <ul>
                     <li>Patty van zwarte bonen en quinoa</li>
