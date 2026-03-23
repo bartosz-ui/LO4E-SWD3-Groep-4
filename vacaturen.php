@@ -1,8 +1,8 @@
 <?php
 $bericht = "";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $functie = filter_input(INPUT_POST, 'functie', FILTER_SANITIZE_STRING);
-    $naam = filter_input(INPUT_POST, 'naam', FILTER_SANITIZE_STRING);
+    $functie = filter_input(INPUT_POST, 'functie', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $naam = filter_input(INPUT_POST, 'naam', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 
     if (!$naam || !$email || !$functie) {
@@ -17,12 +17,12 @@ include 'header.php';
 ?>
 
 <main>
+    <?php
+    if ($bericht != "") {
+        echo "<p class='success'>$bericht</p>";
+    }
+    ?>
     <section id="vacatures">
-        <?php
-        if ($bericht != "") {
-            echo "<p class='success'>$bericht</p>";
-        }
-        ?>
 
         <article class="job">
             <h3>Kok (Vegan Keuken)</h3>
