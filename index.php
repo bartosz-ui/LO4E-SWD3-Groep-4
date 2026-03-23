@@ -8,7 +8,7 @@
 <script src="script.js" defer></script>
 </head>
 <body>
-
+ 
 <header>
     <img src="images/logo_vegan_food_amsterdam.png" alt="Logo" class="logo">
     <div>
@@ -16,7 +16,7 @@
         <p>100% plantaardig genieten in Amsterdam</p>
     </div>
 </header>
-
+ 
 <nav>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="hamburger">☰ Menu</label>
@@ -28,7 +28,7 @@
         <li><a href="reserveren.php" id="nav-button">Reserveren</a></li>
     </ul>
 </nav>
-
+ 
 <main>
     <section id="home">
         <h2>Welkom</h2>
@@ -47,30 +47,32 @@
             <img src="stylesheet/images/vega burger.png" alt="Vegan burger" class="burger-img-small">
         </article>
     </section>
-
+ 
     <section id="menu">
         <h2>Populaire gerechten</h2>
-        <article class ="menu-items">
-            <h3><a href="vegan-burger">De Vegan Burger</a></h3>
-            <p>Huisgemaakte burger met verse groenten en saus.</p>
-        </article>
-
-        <article class="menu-items">
-            <h3><a href="buddha-bowl">Buddha Bowl</a></h3>
-            <p>Gezonde bowl met quinoa, avocado en seizoensgroenten.</p>
-        </article>
-
-        <article class="menu-items">
-            <h3><a href="vegan-pasta">Vegan Pasta</a></h3>
-            <p>Pasta met romige plantaardige saus en groenten.</p>
-        </article>
+        <div class="menu-grid">
+            <article class ="menu-items">
+                <h3><a href="vegan-burger">De Vegan Burger</a></h3>
+                <p>Huisgemaakte burger met verse groenten en saus.</p>
+            </article>
+ 
+            <article class="menu-items">
+                <h3><a href="buddha-bowl">Buddha Bowl</a></h3>
+                <p>Gezonde bowl met quinoa, avocado en seizoensgroenten.</p>
+            </article>
+ 
+            <article class="menu-items">
+                <h3><a href="vegan-pasta">Vegan Pasta</a></h3>
+                <p>Pasta met romige plantaardige saus en groenten.</p>
+            </article>
+        </div>
     </section>
-
+ 
     <section id="over">
         <h2>Over ons</h2>
         <p>Ons restaurant richt zich op duurzaam en lekker eten. Alles is 100% vegan en vers bereid.</p>
     </section>
-
+ 
     <section id="contact">
         <h2>Contact</h2>
         <p><strong>Email:</strong> info@veganfoodamsterdam.nl</p>
@@ -78,12 +80,13 @@
         <p>📍 Amsterdam</p>
     </section>
 </main>
-
+ 
 <footer>
 <?php
 echo "© " . date("Y") . " Vegan Food Amsterdam. Alle rechten voorbe houden.";
-?> 
+?>
 </footer>
-
+ 
 </body>
 </html>
+ 
