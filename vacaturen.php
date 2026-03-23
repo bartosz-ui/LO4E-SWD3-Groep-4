@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <li><a href="index.php">Home</a></li>
             <li><a href="lunch and dinner.php">Menu</a></li>
             <li><a href="openingstijden.php">Openingstijden</a></li>
-            <li><a href="vacatures.php">Vacatures</a></li>
+            <li><a href="vacaturen.php">Vacatures</a></li>
             <li><a href="reserveren.php" id="nav-button">Reserveren</a></li>
         </ul>
     </nav>
