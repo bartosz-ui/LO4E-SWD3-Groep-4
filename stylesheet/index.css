@@ -1,19 +1,20 @@
 
+ 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Arial, sans-serif;
 }
-
+ 
 body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
     height: auto;
 }
-
-
+ 
+ 
 header {
     background-color: #2e7d32;
     color: white;
@@ -23,23 +24,23 @@ header {
     justify-content: center;
     gap: 20px;
 }
-
+ 
 .logo {
     width: 70px;
     height: auto;
     border-radius: 50%;
 }
-
-
+ 
+ 
 nav {
     background-color: #1a1a1a;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
-
+ 
 #menu-toggle { display: none; }
-
+ 
 .hamburger {
     display: block;
     color: white;
@@ -48,16 +49,16 @@ nav {
     text-align: center;
     font-weight: bold;
 }
-
+ 
 nav ul {
     display: none;
     list-style: none;
 }
-
+ 
 #menu-toggle:checked ~ ul {
     display: block;
 }
-#menu {
+.menu-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -79,31 +80,31 @@ nav a {
     text-align: center;
     transition: 0.3s;
 }
-
+ 
 nav a:hover {
     background-color: #2e7d32;
     border-radius: 8px;
 }
-
-
+ 
+ 
 main {
     padding: 20px;
     max-width: 1100px;
     margin: auto;
 }
-
+ 
 section {
     margin-bottom: 50px;
 }
-
+ 
 h2 {
     color: #2e7d32;
     border-bottom: 2px solid #2e7d32;
     display: inline-block;
     margin-bottom: 20px;
 }
-
-
+ 
+ 
 .intro-container {
     display: flex;
     align-items: flex-start;
@@ -112,36 +113,48 @@ h2 {
     border: none;
     padding: 0;
 }
-
+ 
 .intro-text {
     flex: 2;
 }
-
+ 
 .intro-text ul {
     margin: 15px 0 0 20px;
 }
-
+ 
 .burger-img-small {
-    width: 220px; 
+    width: 220px;
     height: auto;
     border-radius: 12px;
     order: 2;
 }
-
-
+ 
+ 
 .menu-container{
     max-width: 800px;
     margin: 50px auto;
     text-align: center;
 }
-
+ 
 .menu{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 10px;
 }
 
+@media (min-width: 600px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .menu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+ 
 .menu-item{
     background: white;
     padding: 20px;
@@ -149,7 +162,7 @@ h2 {
     border-left: 6px solid #256628;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
-
+ 
 .menu-buttons button{
     padding: 12px 25px;
     font-size: 18px;
@@ -172,7 +185,7 @@ footer {
     position : relative;
     bottom: 0;
 }
-
+ 
 #nav-button {
  background-color: #256628;
   color: white;
@@ -180,12 +193,12 @@ footer {
   font-size: 16px;
   border-radius: 8px;
 }
-
+ 
 .reservation {
   padding: 60px 20px;
   text-align: center;
 }
-
+ 
 .reservation-form {
   max-width: 400px;
   margin: auto;
@@ -197,13 +210,13 @@ footer {
   background-color: rgba(2, 66, 27, 0.548);
   border-radius: 5px;
 }
-
+ 
 .reservation-form input,
 .reservation-form select {
   padding: 12px;
   font-size: 16px;
 }
-
+ 
 .reservation-form button {
   padding: 14px;
   background: black;
@@ -212,20 +225,15 @@ footer {
   cursor: pointer;
   font-size: 16px;
 }
-
+ 
 .reservation-form button:hover {
   background: #333;
 }
-body {
-    background: white;
-    color: black;
-}
-
 .dark-mode {
     background: #121212;
     color: #ffffff;
 }
-
+ 
 .dark-mode .menu-item {
     background: #1e1e1e;
 }
@@ -233,7 +241,7 @@ body {
     background: black;
     color: yellow;
 }
-
+ 
 .high-contrast a {
     color: cyan;
 }
@@ -246,54 +254,173 @@ body {
         order: -1;
     }
 }
-
+ 
 @media (min-width: 768px) {
     .hamburger { display: none; }
-    
+   
     nav ul {
         display: flex;
         justify-content: center;
     }
-
-    #menu {
+ 
+    .menu-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 #vacatures {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 25px;
+    padding: 10px;
 }
-
+ 
 .job {
-    background: white;
+    background: #ffffff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     border-left: 6px solid #2e7d32;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
+ 
+.job:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+ 
 .job h3 {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    color: #256628;
 }
-
+ 
+.job p {
+    margin-bottom: 15px;
+    line-height: 1.65;
+    color: #333;
+}
+ 
+.job form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+ 
+.job input[type="text"],
+.job input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
+}
+ 
 .apply-btn {
     margin-top: 10px;
     padding: 12px;
-    background: black;
+    background: #2e7d32;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
-
+ 
 .apply-btn:hover {
-    background: #333;
+    background: #1f5a23;
+    transform: translateY(-1px);
 }
+ 
+.success {
+    margin-bottom: 20px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: #e8f7e8;
+    color: #2a7d2e;
+    border: 1px solid #8dd18a;
+}
+ 
 @media (min-width: 768px) {
-
+ 
     #vacatures {
         grid-template-columns: 1fr 1fr 1fr;
     }
+ 
+}
+ 
+/* Accessibility Additions */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
+.accessibility-toolbar {
+    background: #e8f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.accessibility-toolbar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: none;
+    color: #1b5e20;
+}
+
+.toolbar-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.toolbar-buttons button {
+    padding: 10px 15px;
+    border: 2px solid #2e7d32;
+    background: white;
+    color: #2e7d32;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.toolbar-buttons button:hover, .toolbar-buttons button:focus {
+    background: #2e7d32;
+    color: white;
+    outline: 2px solid #1b5e20;
+    outline-offset: 2px;
+}
+
+.dark-mode .accessibility-toolbar {
+    background: #2c2c2c;
+}
+
+.dark-mode .accessibility-toolbar h2 {
+    color: #a5d6a7;
+}
+
+.high-contrast .accessibility-toolbar {
+    background: #000;
+    border: 2px solid yellow;
+}
+
+.high-contrast .accessibility-toolbar h2 {
+    color: yellow;
+}
+
+.high-contrast .toolbar-buttons button {
+    background: black;
+    color: yellow;
+    border: 2px solid yellow;
 }
