@@ -153,11 +153,10 @@ h2 {
 .menu-buttons button{
     padding: 12px 25px;
     font-size: 18px;
-    border: solid 2px #256628;
     border-radius: 6px;
-    cursor: pointer;
     margin: 5px;
-    background-color: #2e7d32;
+  background: linear-gradient(to bottom, #2E7D32, #6BF36B);
+
 }
 .menu-buttons button:hover {
     box-shadow: 0px 4px 8px rgba(0,0,0,0.4);
