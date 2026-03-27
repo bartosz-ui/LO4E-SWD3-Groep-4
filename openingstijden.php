@@ -17,6 +17,22 @@ include 'header.php';
             <li>Zondag: 14:00 - 21:00</li>
         </ul>
     </section>
+    <section id="locatie">
+        <h2>Locatie</h2>
+        <p>Vegan Food Amsterdam</p>
+        <figure class="locatie-card">
+            <img src="stylesheet/images/locatie.png" alt="Locatie van Vegan Food Amsterdam" class="locatie-image">
+            <figcaption class="locatie-data">
+                <p><strong>Adres:</strong> Plantage Middenlaan 123, 1018 DH Amsterdam, Nederland</p>
+                <p>Onze vestiging bevindt zich in het hart van Amsterdam, vlak bij Artis en de Plantage Middenlaan.</p>
+            </figcaption>
+        </figure>
+        <address>
+            Plantage Middenlaan 123<br>
+            1018 DH Amsterdam<br>
+            Nederland
+        </address>
+    </section>
 </main>
 
 <?php include 'footer.php'; ?>

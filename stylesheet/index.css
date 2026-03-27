@@ -96,6 +96,47 @@ main {
 section {
     margin-bottom: 50px;
 }
+
+.locatie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    background: #ffffff;
+    border: 1px solid #d6e8d6;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+}
+
+.locatie-image {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: auto;
+}
+
+.locatie-data {
+    text-align: center;
+    color: #2e7d32;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .locatie-card {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .locatie-image {
+        width: 45%;
+    }
+    .locatie-data {
+        width: 55%;
+        text-align: left;
+    }
+}
  
 h2 {
     color: #2e7d32;
