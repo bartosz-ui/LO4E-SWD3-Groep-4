@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!$naam || !$email || !$functie) {
         $bericht = "Vul alle velden correct in.";
     } else {
-        // TODO: in echte app: sla op in database of verstuur e-mail.
+      
         $bericht = "Bedankt $naam! Je sollicitatie voor '$functie' is ontvangen.";
     }
 }
